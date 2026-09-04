@@ -1,0 +1,34 @@
+.ui-button {
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  min-height: 46px;
+  padding: 0 22px;
+  transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
+}
+
+.ui-button:hover:not(:disabled) { transform: translateY(-2px); }
+.ui-button:disabled { cursor: not-allowed; opacity: 0.48; }
+.ui-button--primary { background: #e85d3f; box-shadow: 0 5px 0 #b63e28; color: #fff; }
+.ui-button--secondary { background: #dce8e1; box-shadow: 0 5px 0 #a5b9ae; color: #17352d; }
+
+.input-field { display: grid; gap: 8px; max-width: 360px; }
+.input-field__label { color: #34414a; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; }
+.input-field__control { background: #fffdf8; border: 2px solid #b9c5c3; border-radius: 6px; color: #1d252c; min-height: 48px; outline: 0; padding: 0 14px; }
+.input-field__control:focus { border-color: #347d72; box-shadow: 0 0 0 3px #c9e1d9; }
+.input-field__control--error { border-color: #c64135; }
+.input-field__control:disabled { background: #e8e8e2; cursor: not-allowed; }
+.input-field__message { color: #b3312a; font-size: 12px; }
+
+.product-card { border-radius: 8px; display: grid; grid-template-columns: 132px 1fr; max-width: 440px; overflow: hidden; }
+.product-card--light { background: #fffdf8; color: #1d252c; }
+.product-card--dark { background: #202b32; color: #f6f3e9; }
+.product-card__image { align-items: center; background: #dce8e1; color: #275c51; display: flex; font-family: 'Space Grotesk', sans-serif; font-size: 34px; font-weight: 700; justify-content: center; min-height: 210px; }
+.product-card--dark .product-card__image { background: #d8c37a; color: #202b32; }
+.product-card__content { padding: 24px 20px; }
+.product-card__eyebrow { font-size: 11px; letter-spacing: 0.08em; margin: 0 0 14px; text-transform: uppercase; }
+.product-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; margin: 0 0 12px; }
+.product-card__price { font-size: 18px; font-weight: 700; margin: 0 0 22px; }
+.product-card__action { background: transparent; border: 1px solid currentColor; border-radius: 5px; color: inherit; cursor: pointer; padding: 9px 12px; }
