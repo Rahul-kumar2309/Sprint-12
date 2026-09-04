@@ -12,3 +12,15 @@
 body { margin: 0; }
 
 button, input { font: inherit; }
+
+.showcase { min-height: 100vh; padding: 56px clamp(20px, 7vw, 110px) 80px; }
+.showcase__header { align-items: end; display: flex; gap: 32px; justify-content: space-between; margin: 0 auto 48px; max-width: 1180px; }
+.showcase__eyebrow { color: #347d72; font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; margin: 0 0 14px; text-transform: uppercase; }
+.showcase h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(36px, 6vw, 72px); letter-spacing: 0; line-height: 0.98; margin: 0; max-width: 680px; }
+.showcase__intro { color: #5a6468; line-height: 1.6; margin: 0; max-width: 300px; }
+.showcase__grid { display: grid; gap: 24px; grid-template-columns: minmax(240px, 0.8fr) minmax(360px, 1.2fr); margin: 0 auto; max-width: 1180px; }
+.showcase__panel { background: rgba(255, 253, 248, 0.72); border: 1px solid #d6d8ce; border-radius: 8px; padding: 28px; }
+.showcase__panel h2 { font-family: 'Space Grotesk', sans-serif; font-size: 16px; margin: 0 0 24px; }
+.showcase__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.showcase__product { align-items: center; display: flex; justify-content: center; min-height: 300px; }
+@media (max-width: 720px) { .showcase__header, .showcase__grid { display: grid; grid-template-columns: 1fr; } .showcase__header { gap: 20px; } .showcase__panel { padding: 22px; } }
